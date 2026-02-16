@@ -1,17 +1,12 @@
-# OeMga.me
-
 <p align="center">
-  <a href="LICENSE" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0" />
-  </a>
-  <a href="https://www.zephyrproject.org/" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Zephyr-RTOS-black.svg" alt="Zephyr RTOS" />
-  </a>
-  <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg" alt="nRF Connect SDK" />
-  </a>
+<strong>OeMga.me</strong>
 </p>
 
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"/></a>
+  <a href="https://www.zephyrproject.org/"><img src="https://img.shields.io/badge/Zephyr-RTOS-black.svg" alt="Zephyr RTOS"/></a>
+  <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/"><img src="https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg" alt="nRF Connect SDK"/></a>
+</p>
 
 <p align="center">
 <strong>The open-source, on-device bio-interaction platform.</strong>
@@ -19,9 +14,11 @@
 
 ## Technical Overview
 
-**oemga-core** is the central firmware repository for the OeMga platform, targeting the **oemga_alpha** (nRF54L15) hardware. This repository facilitates the development of wearable bio-sensors, including EMG, EEG, and fNIRS devices.
+**oemga-core** is the central firmware repository for the OeMga platform.
 
-By utilizing a Docker-based toolchain, this project ensures that all contributors build with the exact same compiler and SDK versions, eliminating environment-related inconsistencies.
+We are starting with **OeMga α (oemga_alpha)** as the foundational product, but the architecture is intentionally **multi-board**: this repo will grow to support additional OEMGA modules and hardware revisions over time.
+
+To keep builds reproducible across contributors and machines, `oemga-core` uses a **Docker-first toolchain** and a pinned **NCS/Zephyr workspace**, ensuring everyone builds with the same SDK + compiler versions and avoiding environment-driven inconsistencies.
 
 ## Workspace Architecture
 
