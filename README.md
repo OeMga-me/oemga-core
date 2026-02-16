@@ -14,7 +14,7 @@
 
 **oemga-core** is the central firmware repository for the OeMga platform.
 
-We are starting with **OeMga α (oemga_alpha)** as the foundational product, but the architecture is intentionally **multi-board**: this repo will grow to support additional OEMGA modules and hardware revisions over time.
+We are starting with **OeMga α (oemga_alpha)** as the foundational product, this repo will grow to support additional OEMGA modules and hardware revisions over time.
 
 To keep builds reproducible across contributors and machines, `oemga-core` uses a **Docker-first toolchain** and a pinned **NCS/Zephyr workspace**, ensuring everyone builds with the same SDK + compiler versions and avoiding environment-driven inconsistencies.
 
