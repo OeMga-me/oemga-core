@@ -1,0 +1,8 @@
+# Zephyr / west build outputs
+build/
+**/build/
+
+# (Optional) common extras
+.venv/
+.vscode/
+.DS_Store
