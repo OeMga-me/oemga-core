@@ -1,27 +1,35 @@
-# OEMGA Core ⚡️
+# OeMga.me — oemga-core
 
-**OEMGA Core** is the open-source firmware foundation for **OEMGA** — a clean, reproducible, one-command developer experience built on **Nordic nRF Connect SDK (NCS) v3.1.1**.
-
-This repo is designed for **fast onboarding** and **scalable product evolution**:
-- Contributors build against the official upstream Zephyr/NCS board targets.
-- OEMGA hardware differences are applied via **standard overlays + Kconfig**, keeping everything compatible with upstream tooling.
-- A lightweight `oemga` CLI provides a **single entrypoint** for setup + builds (Docker-first).
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Zephyr RTOS](https://img.shields.io/badge/Zephyr-RTOS-black.svg)](https://www.zephyrproject.org/)
+[![nRF Connect SDK](https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg)](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/)
 
 ---
 
-## What you can do here
+## The Vision
+Current wearables demand that we speak their language. **OeMga.me learns ours.**
 
-✅ Initialize a fully pinned NCS workspace  
-✅ Build OEMGA targets with a human-friendly name (e.g. `oemga_alpha`)  
-✅ Produce flashable artifacts with deterministic outputs  
-✅ Keep OEMGA deltas cleanly separated via overlays (no custom board fork required)
+Most systems ship as rigid pipelines — fixed FSMs, fixed heuristics, fixed assumptions. They log bio-signals and ask the user to adapt.  
+OeMga.me flips the contract: **the device adapts to the user**.
+
+This repository holds the firmware core that makes that possible — the real-time edge foundation for a **Teachable Bio-Interaction Platform**, where intelligence lives locally, responds instantly, and evolves with the person wearing it.
 
 ---
 
-## Repository Layout
+## The Foundation: OeMga α (Firmware)
+`oemga-core` contains the firmware source for the foundational module of the OeMga α platform.
 
-```text
-oemga-core/
-├─ apps/                # Firmware applications (Zephyr/NCS)
-├─ west.yml             # Workspace manifest (pins NCS + module revisions)
-└─ oemga                # CLI wrapper (setup/build via Docker)
+- Built on **Zephyr RTOS** via **Nordic nRF Connect SDK (NCS) v3.1.1**
+- Structured for **upstream alignment**: we build against official Zephyr/NCS board targets
+- OEMGA-specific hardware differences are applied via **standard Zephyr overlays + Kconfig**
+- A single `oemga` CLI provides a clean, reproducible workflow (Docker-first)
+
+---
+
+## Quick Start
+
+### 1) Setup
+Initialize the workspace (pulls NCS + dependencies pinned by `west.yml`).
+
+```bash
+./oemga setup
