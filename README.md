@@ -1,16 +1,17 @@
 # OeMga.me
 
 <p align="center">
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0">
+  <a href="LICENSE" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0" />
   </a>
-  <a href="https://www.zephyrproject.org/">
-    <img src="https://img.shields.io/badge/Zephyr-RTOS-black.svg" alt="Zephyr RTOS">
+  <a href="https://www.zephyrproject.org/" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Zephyr-RTOS-black.svg" alt="Zephyr RTOS" />
   </a>
-  <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/">
-    <img src="https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg" alt="nRF Connect SDK">
+  <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg" alt="nRF Connect SDK" />
   </a>
 </p>
+
 
 <p align="center">
 <strong>The open-source, on-device bio-interaction platform.</strong>
