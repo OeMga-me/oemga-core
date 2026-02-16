@@ -1,6 +1,4 @@
-<p align="center">
-<strong>OeMga.me</strong>
-</p>
+<h1 align="center">OeMga.me</h1>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"/></a>
