@@ -1,0 +1,7 @@
+default: hello_oemga
+build_dir: /workdir/oemga-core/build
+domains:
+  - name: hello_oemga
+    build_dir: /workdir/oemga-core/build/hello_oemga
+flash_order:
+  - hello_oemga

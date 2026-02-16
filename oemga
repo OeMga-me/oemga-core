@@ -1,0 +1,161 @@
+#!/usr/bin/env bash
+
+# Configuration
+# ------------------------------------------------------------------
+# Mapping friendly aliases to upstream targets
+# (Using a function instead of associative array for macOS/Bash 3.2 compatibility)
+get_board_target() {
+    case "$1" in
+        "oemga_alpha") echo "bl54l15u_dvk/nrf54l15/cpuapp" ;;
+        *) echo "" ;;
+    esac
+}
+
+# Docker Configuration
+DOCKER_IMG="${OEMGA_DOCKER_IMAGE:-ghcr.io/nrfconnect/sdk-nrf-toolchain:latest}"
+
+# Helper Functions
+# ------------------------------------------------------------------
+print_usage() {
+    echo "OEMGA Build Wrapper"
+    echo "Usage:"
+    echo "  ./oemga setup               Initialize/Update the West workspace"
+    echo "  ./oemga build <alias> [app] Build an app for a board alias"
+    echo "  ./oemga clean               Clean the build directory"
+    echo "  ./oemga shell               Open a bash shell inside the Docker container"
+    echo ""
+    echo "Available Aliases:"
+    echo "  - oemga_alpha"
+}
+
+run_in_docker() {
+    # Determine mount points
+    if [[ "$(basename $(pwd))" == "oemga-core" ]]; then
+        MOUNT_DIR=$(dirname $(pwd))
+        WORKDIR_PATH="/workdir/oemga-core"
+    else
+        MOUNT_DIR=$(pwd)
+        WORKDIR_PATH="/workdir"
+    fi
+
+    echo "🐳 Running in Docker ($DOCKER_IMG)..."
+    
+    # FIX APPLIED:
+    # 1. Removed ACCEPT_JLINK_LICENSE=1 to prevent the udev/installation crash.
+    # 2. Added --entrypoint /bin/bash to bypass the image's default startup script 
+    #    (which forces the check).
+    # 3. Used '/bin/bash -l -c' to ensure a login shell loads the toolchain ENV vars.
+    
+    docker run --rm -it \
+        --privileged \
+        --entrypoint /bin/bash \
+        -v "$MOUNT_DIR":/workdir \
+        -v /dev:/dev \
+        -w "$WORKDIR_PATH" \
+        "$DOCKER_IMG" \
+        -l -c "$1"
+}
+
+# Command Parsing
+# ------------------------------------------------------------------
+COMMAND=$1
+ARG2=$2
+ARG3=$3
+
+if [ -z "$COMMAND" ]; then
+    print_usage
+    exit 1
+fi
+
+case $COMMAND in
+    setup)
+        echo "⚙️  Initializing West Workspace..."
+        # We ignore errors on west init in case it was already initialized
+        run_in_docker "west init -l . || true && west update && west zephyr-export"
+        ;;
+
+    build)
+        ALIAS=$ARG2
+        APP_PATH=${ARG3:-apps/hello_oemga} 
+
+        if [ -z "$ALIAS" ]; then
+            echo "❌ Error: Missing board alias."
+            print_usage
+            exit 1
+        fi
+
+        TARGET=$(get_board_target "$ALIAS")
+
+        if [ -z "$TARGET" ]; then
+            echo "❌ Error: Unknown alias '$ALIAS'."
+            print_usage
+            exit 1
+        fi
+
+        echo "🔨 Building '$APP_PATH' for '$ALIAS' (Target: $TARGET)"
+        
+        run_in_docker "west build -p auto -b $TARGET $APP_PATH"
+        ;;
+    
+    flash)
+        # Define the firmware path (adjust 'hello_oemga' if your app name varies)
+        HEX_FILE="build/hello_oemga/zephyr/zephyr.hex"
+
+        # Check if the build exists
+        if [ ! -f "$HEX_FILE" ]; then
+            echo "❌ Error: Firmware file not found at $HEX_FILE"
+            echo "   Please run './omega build' first."
+            exit 1
+        fi
+
+        echo "🔍 Looking for flashing method..."
+
+        # --- METHOD 1: Universal Drag-and-Drop (Zero Dependencies) ---
+        # Checks standard mount points for the JLINK drive
+        if [ -d "/Volumes/JLINK" ]; then
+            DRIVE_PATH="/Volumes/JLINK"
+        elif [ -d "/run/media/$USER/JLINK" ]; then
+            DRIVE_PATH="/run/media/$USER/JLINK"
+        fi
+
+        if [ -n "$DRIVE_PATH" ]; then
+            echo "✅ Found JLINK drive at $DRIVE_PATH"
+            echo "🚀 Copying firmware..."
+            cp "$HEX_FILE" "$DRIVE_PATH/"
+            # Sync ensures the write is flushed before we say success
+            sync
+            echo "✨ Success! Board should be blinking now."
+            exit 0
+        fi
+
+        # --- METHOD 2: nRF Command Line Tools (For Advanced Users) ---
+        if command -v nrfjprog &> /dev/null; then
+            echo "✅ Found 'nrfjprog' tool."
+            echo "⚡ Flashing with verification..."
+            nrfjprog --program "$HEX_FILE" --chiperase --verify --reset
+            exit 0
+        fi
+
+        # --- FAILURE ---
+        echo "❌ Could not flash board automatically."
+        echo "   1. Ensure the board is plugged in."
+        echo "   2. Universal Method: Ensure the device appears as a 'JLINK' USB drive."
+        echo "   3. Advanced Method: Install 'nrfjprog' (nRF Command Line Tools)."
+        exit 1
+        ;;
+    
+    clean)
+        echo "🧹 Cleaning build artifacts..."
+        rm -rf build
+        ;;
+
+    shell)
+        run_in_docker "/bin/bash"
+        ;;
+
+    *)
+        echo "❌ Unknown command: $COMMAND"
+        print_usage
+        exit 1
+        ;;
+esac

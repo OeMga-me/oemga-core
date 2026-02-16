@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/workdir/zephyr/boards/ezurio/bl54l15u_dvk/Kconfig.bl54l15u_dvk"

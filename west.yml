@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: ncs
+      url-base: https://github.com/nrfconnect
+    - name: zephyr
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: sdk-nrf
+      remote: ncs
+      revision: v3.1.1
+      path: nrf
+      import: true
+      
+  self:
+    path: oemga-core

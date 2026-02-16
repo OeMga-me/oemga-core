@@ -1,0 +1,30 @@
+# Available runners configured by board.cmake.
+runners:
+- nrfutil
+- jlink
+
+# Default flash runner if --runner is not given.
+flash-runner: nrfutil
+
+# Default debug runner if --runner is not given.
+debug-runner: jlink
+
+# Common runner configuration values.
+config:
+  board_dir: /workdir/zephyr/boards/ezurio/bl54l15u_dvk
+  # Build outputs:
+  elf_file: zephyr.elf
+  hex_file: /workdir/oemga-core/build/merged.hex
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb
+
+# Runner specific arguments
+args:
+  nrfutil:
+    []
+
+  jlink:
+    - --dt-flash=y
+    - --device=nRF54L15_M33
+    - --speed=4000

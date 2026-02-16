@@ -1,0 +1,2 @@
+"nrf":"/workdir/nrf":"/workdir/nrf/sysbuild"
+"mcuboot":"/workdir/bootloader/mcuboot":"/workdir/bootloader/mcuboot/boot/zephyr/sysbuild"

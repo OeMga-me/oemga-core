@@ -1,0 +1,13 @@
+# Target labels
+ hello_oemga
+# Source files and their labels
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/CMakeFiles/hello_oemga
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/CMakeFiles/hello_oemga.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/CMakeFiles/hello_oemga-complete.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/hello_oemga-prefix/src/hello_oemga-stamp/hello_oemga-build.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/hello_oemga-prefix/src/hello_oemga-stamp/hello_oemga-configure.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/hello_oemga-prefix/src/hello_oemga-stamp/hello_oemga-download.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/hello_oemga-prefix/src/hello_oemga-stamp/hello_oemga-install.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/hello_oemga-prefix/src/hello_oemga-stamp/hello_oemga-mkdir.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/hello_oemga-prefix/src/hello_oemga-stamp/hello_oemga-patch.rule
+/workdir/oemga-core/build/_sysbuild/sysbuild/images/hello_oemga-prefix/src/hello_oemga-stamp/hello_oemga-update.rule

@@ -1,0 +1,19 @@
+/*
+ * OEMGA ALPHA BOARD OVERLAY
+ * Target: bl54l15u_dvk_nrf54l15_cpuapp
+ * * This file applies hardware changes specific to the OEMGA prototype
+ * on top of the standard bl54l15u_dvk definition.
+ */
+
+/ {
+    model = "OEMGA Alpha Prototype";
+    
+    /* Example: Override a chosen node or alias if OEMGA pins differ */
+    /* aliases {
+        led0 = &my_custom_led;
+    };
+    */
+};
+
+/* Example: Disabling a DVK feature not present on OEMGA */
+/* &button0 { status = "disabled"; }; */

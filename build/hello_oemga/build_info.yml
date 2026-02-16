@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: '/workdir/oemga-core/apps/hello_oemga'
+    source-dir: '/workdir/oemga-core/apps/hello_oemga'
+  board:
+    name: 'bl54l15u_dvk'
+    path:
+     - '/workdir/zephyr/boards/ezurio/bl54l15u_dvk'
+    qualifiers: 'nrf54l15/cpuapp'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/workdir/nrf/dts/bindings'
+     - '/workdir/zephyr/dts/bindings'
+    files:
+     - '/workdir/zephyr/boards/ezurio/bl54l15u_dvk/bl54l15u_dvk_nrf54l15_cpuapp.dts'
+     - '/workdir/oemga-core/apps/hello_oemga/boards/bl54l15u_dvk_nrf54l15_cpuapp.overlay'
+    include-dirs:
+     - '/workdir/nrf/include'
+     - '/workdir/nrf/dts/common'
+     - '/workdir/nrf/dts/riscv'
+     - '/workdir/nrf/dts/arm'
+     - '/workdir/nrf/dts'
+     - '/workdir/zephyr/include'
+     - '/workdir/zephyr/include/zephyr'
+     - '/workdir/zephyr/dts/common'
+     - '/workdir/zephyr/dts/vendor'
+     - '/workdir/zephyr/dts/rx'
+     - '/workdir/zephyr/dts/x86'
+     - '/workdir/zephyr/dts/xtensa'
+     - '/workdir/zephyr/dts/sparc'
+     - '/workdir/zephyr/dts/riscv'
+     - '/workdir/zephyr/dts/posix'
+     - '/workdir/zephyr/dts/arm64'
+     - '/workdir/zephyr/dts/arm'
+     - '/workdir/zephyr/dts/arc'
+     - '/workdir/zephyr/dts'
+    user-files:
+     - '/workdir/oemga-core/apps/hello_oemga/boards/bl54l15u_dvk_nrf54l15_cpuapp.overlay'
+  kconfig:
+    files:
+     - '/workdir/zephyr/boards/ezurio/bl54l15u_dvk/bl54l15u_dvk_nrf54l15_cpuapp_defconfig'
+     - '/workdir/oemga-core/apps/hello_oemga/prj.conf'
+     - '/workdir/oemga-core/apps/hello_oemga/boards/bl54l15u_dvk_nrf54l15_cpuapp.conf'
+     - '/workdir/oemga-core/build/hello_oemga/zephyr/.config.sysbuild'
+    user-files:
+     - '/workdir/oemga-core/apps/hello_oemga/prj.conf'
+     - '/workdir/oemga-core/apps/hello_oemga/boards/bl54l15u_dvk_nrf54l15_cpuapp.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk'
+  vendor-specific:
+    nordic:
+      svdfile: '/workdir/modules/hal/nordic/nrfx/mdk/nrf54l15_application.svd'
+  zephyr:
+    version: '4.1.99'
+    zephyr-base: '/workdir/zephyr'
+version: '0.1.0'
