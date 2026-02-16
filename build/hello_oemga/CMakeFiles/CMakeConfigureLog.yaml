@@ -1,0 +1,3212 @@
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:28 (find_package)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    name: "ZephyrBuildConfiguration"
+    configs:
+      -
+        filename: "ZephyrBuildConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyrbuild-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: false
+      bypass_provider: false
+      names:
+        - "ZephyrBuild"
+      search_paths:
+        - "/workdir/zephyr/../*"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: false
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: false
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/tools/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/tools/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/test/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/test/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/bootloader/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/bootloader/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/nrf/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/nrf/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/nrf/cmake/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/nrf/cmake/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/nrf/share/zephyrbuild-package/ZephyrBuildConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/nrf/share/zephyrbuild-package/zephyrbuild-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/workdir/nrf/share/zephyrbuild-package/cmake/ZephyrBuildConfig.cmake"
+      mode: "config"
+      version: ""
+    search_context:
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:41 (find_package)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    name: "ZephyrAppConfiguration"
+    configs:
+      -
+        filename: "ZephyrAppConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyrapp-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: false
+      bypass_provider: false
+      names:
+        - "ZephyrApp"
+      search_paths:
+        - "/workdir/oemga-core/apps/hello_oemga"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: false
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: false
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/ZephyrAppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/zephyrapp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/apps/hello_oemga/ZephyrAppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/apps/hello_oemga/zephyrapp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/python.cmake:26 (find_program)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "Python3_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/python"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/python"
+    search_context:
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/ccache.cmake:10 (find_program)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CCACHE_FOUND"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ccache"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/ccache"
+    search_context:
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/FindZephyr-sdk.cmake:80 (find_package)"
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:51 (find_package)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    name: "Zephyr-sdk"
+    components:
+      -
+        name: "LOAD"
+        required: false
+        found: false
+    configs:
+      -
+        filename: "Zephyr-sdkConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyr-sdk-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "0.16"
+      version_complete: "0.16"
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      hints:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk"
+      names:
+        - "Zephyr-sdk"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/Zephyr-sdkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/zephyr-sdk-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/cmake/Zephyr-sdkConfig.cmake"
+      mode: "config"
+      version: "0.17.0"
+    search_context:
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:54 (find_program)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "GPERF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gperf"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/gperf"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/gperf"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/gperf"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/gperf"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:57 (find_program)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "OPENOCD"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "openocd"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/openocd"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/openocd"
+      - "/usr/local/sbin/openocd"
+      - "/usr/local/bin/openocd"
+      - "/usr/sbin/openocd"
+      - "/usr/bin/openocd"
+      - "/sbin/openocd"
+      - "/bin/openocd"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:60 (find_program)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "BOSSAC"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "bossac"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/bossac"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/bossac"
+      - "/usr/local/sbin/bossac"
+      - "/usr/local/bin/bossac"
+      - "/usr/sbin/bossac"
+      - "/usr/bin/bossac"
+      - "/sbin/bossac"
+      - "/bin/bossac"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:65 (find_program)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "IMGTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "imgtool.py"
+      - "imgtool"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/workdir/bootloader/mcuboot/scripts/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/imgtool.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/imgtool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/imgtool.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/imgtool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/imgtool.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/imgtool"
+    found: "/workdir/bootloader/mcuboot/scripts/imgtool.py"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:68 (find_program)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "PTY_INTERFACE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "winpty"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/winpty"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/winpty"
+      - "/usr/local/sbin/winpty"
+      - "/usr/local/bin/winpty"
+      - "/usr/sbin/winpty"
+      - "/usr/bin/winpty"
+      - "/sbin/winpty"
+      - "/bin/winpty"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/compiler/gcc/generic.cmake:5 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:113 (include)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/compiler/gcc/generic.cmake:6 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindHostTools.cmake:113 (include)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:9 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GCOV"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcov"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/modules/FindDtc.cmake:19 (find_program)"
+      - "/workdir/zephyr/cmake/modules/dts.cmake:10 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:131 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "DTC"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dtc"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/dtc"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/dtc"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/dtc"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/dtc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/compiler/gcc/target.cmake:26 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:103 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:5 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:6 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-objdump"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:7 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_AS"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-as"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-as"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:12 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:13 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:15 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-readelf"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:16 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-nm"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:17 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-strip"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:19 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GDB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb-py"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb-py"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/bintools/gnu/target.cmake:31 (find_program)"
+      - "/workdir/zephyr/cmake/modules/FindTargetTools.cmake:106 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_GDB_NO_PY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/uname"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      The target system is: Generic - 4.1.99 - arm
+      The host system is: Linux - 6.12.67-linuxkit - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Program used to build from build.ninja files."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ninja-build"
+      - "ninja"
+      - "samu"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/ninja-build"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/ninja"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/samu"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/ninja-build"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/ninja"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/samu"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/ninja-build"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/ninja"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/samu"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/ninja-build"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/ninja"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/samu"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/ninja-build"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/ninja"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/"
+      - "/workdir/nrf/cmake/modules/"
+      - "/workdir/zephyr/cmake/modules/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/"
+      - "/workdir/nrf/cmake/modules/"
+      - "/workdir/zephyr/cmake/modules/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /workdir/oemga-core/build/hello_oemga/CMakeFiles/4.2.1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-dlltool"
+      - "/usr/local/sbin/arm-zephyr-eabi-dlltool"
+      - "/usr/local/bin/arm-zephyr-eabi-dlltool"
+      - "/usr/sbin/arm-zephyr-eabi-dlltool"
+      - "/usr/bin/arm-zephyr-eabi-dlltool"
+      - "/sbin/arm-zephyr-eabi-dlltool"
+      - "/bin/arm-zephyr-eabi-dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/dlltool"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/sbin/dlltool"
+      - "/bin/dlltool"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-addr2line"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-tapi"
+      - "/usr/local/sbin/arm-zephyr-eabi-tapi"
+      - "/usr/local/bin/arm-zephyr-eabi-tapi"
+      - "/usr/sbin/arm-zephyr-eabi-tapi"
+      - "/usr/bin/arm-zephyr-eabi-tapi"
+      - "/sbin/arm-zephyr-eabi-tapi"
+      - "/bin/arm-zephyr-eabi-tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/tapi"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/usr/bin/tapi"
+      - "/sbin/tapi"
+      - "/bin/tapi"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-12.2"
+      - "arm-zephyr-eabi-gcc-ar-12"
+      - "arm-zephyr-eabi-gcc-ar12"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/bin/arm-zephyr-eabi-gcc-ar12"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "arm-zephyr-eabi-gcc-ranlib-12"
+      - "arm-zephyr-eabi-gcc-ranlib12"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib12"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/"
+      - "/workdir/nrf/cmake/modules/"
+      - "/workdir/zephyr/cmake/modules/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/"
+      - "/workdir/nrf/cmake/modules/"
+      - "/workdir/zephyr/cmake/modules/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /workdir/oemga-core/build/hello_oemga/CMakeFiles/4.2.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-12.2"
+      - "arm-zephyr-eabi-gcc-ar-12"
+      - "arm-zephyr-eabi-gcc-ar12"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-12"
+      - "/bin/arm-zephyr-eabi-gcc-ar-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar12"
+      - "/sbin/arm-zephyr-eabi-gcc-ar12"
+      - "/bin/arm-zephyr-eabi-gcc-ar12"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "arm-zephyr-eabi-gcc-ranlib-12"
+      - "arm-zephyr-eabi-gcc-ranlib12"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12.2"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib12"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib12"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:61 (_cmake_find_compiler)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER"
+    description: "ASM compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-zephyr-eabi-gcc (Zephyr SDK 0.17.0) 12.2.0
+      Copyright (C) 2022 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ar-"
+      - "arm-zephyr-eabi-gcc-ar-"
+      - "arm-zephyr-eabi-gcc-ar"
+      - "arm-zephyr-eabi-gcc-ar"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ar-"
+      - "/sbin/arm-zephyr-eabi-gcc-ar-"
+      - "/bin/arm-zephyr-eabi-gcc-ar-"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "/workdir/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "/workdir/zephyr/cmake/modules/zephyr_default.cmake:140 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:2 (find_package)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-zephyr-eabi-gcc-ranlib-"
+      - "arm-zephyr-eabi-gcc-ranlib-"
+      - "arm-zephyr-eabi-gcc-ranlib"
+      - "arm-zephyr-eabi-gcc-ranlib"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/local/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/usr/bin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/sbin/arm-zephyr-eabi-gcc-ranlib-"
+      - "/bin/arm-zephyr-eabi-gcc-ranlib-"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc-ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/share/cmake-4.2/Modules/FindGit.cmake:111 (find_program)"
+      - "/workdir/nrf/cmake/version.cmake:24 (find_package)"
+      - "/workdir/nrf/CMakeLists.txt:25 (include)"
+    mode: "program"
+    variable: "GIT_EXECUTABLE"
+    description: "Git command line client"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/git"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/git"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/git"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/git"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/git"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/modules/lib/picolibc/CMakeLists.txt:49 (find_program)"
+    mode: "program"
+    variable: "CCACHE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ccache"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/ccache"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/ccache"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/ccache"
+    found: "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/ccache"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/kobj.cmake:3 (find_program)"
+      - "/workdir/zephyr/CMakeLists.txt:905 (include)"
+    mode: "program"
+    variable: "GEN_KOBJECT_LIST"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gen_kobject_list"
+      - "gen_kobject_list.py"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/workdir/zephyr/scripts/build/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/gen_kobject_list"
+      - "/usr/local/sbin/gen_kobject_list"
+      - "/usr/local/bin/gen_kobject_list"
+      - "/usr/sbin/gen_kobject_list"
+      - "/usr/bin/gen_kobject_list"
+      - "/sbin/gen_kobject_list"
+      - "/bin/gen_kobject_list"
+      - "/workdir/zephyr/scripts/build/gen_kobject_list"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/gen_kobject_list.py"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/gen_kobject_list.py"
+      - "/usr/local/sbin/gen_kobject_list.py"
+      - "/usr/local/bin/gen_kobject_list.py"
+      - "/usr/sbin/gen_kobject_list.py"
+      - "/usr/bin/gen_kobject_list.py"
+      - "/sbin/gen_kobject_list.py"
+      - "/bin/gen_kobject_list.py"
+    found: "/workdir/zephyr/scripts/build/gen_kobject_list.py"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/reports/CMakeLists.txt:87 (find_program)"
+    mode: "program"
+    variable: "PUNCOVER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "puncover"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/puncover"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/puncover"
+      - "/usr/local/sbin/puncover"
+      - "/usr/local/bin/puncover"
+      - "/usr/sbin/puncover"
+      - "/usr/bin/puncover"
+      - "/sbin/puncover"
+      - "/bin/puncover"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/workdir/zephyr/cmake/reports/CMakeLists.txt:104 (find_program)"
+    mode: "program"
+    variable: "PAHOLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pahole"
+    candidate_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+    searched_directories:
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/sbin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin/pahole"
+      - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin/pahole"
+      - "/usr/local/sbin/pahole"
+      - "/usr/local/bin/pahole"
+      - "/usr/sbin/pahole"
+      - "/usr/bin/pahole"
+      - "/sbin/pahole"
+      - "/bin/pahole"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:2 (find_package)"
+    name: "Zephyr"
+    configs:
+      -
+        filename: "ZephyrConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "zephyr-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      hints:
+        - "/workdir/zephyr"
+      names:
+        - "Zephyr"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/oemga-core/build/hello_oemga/CMakeFiles/pkgRedirects/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/cmake/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/cmake/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/share/zephyrunittest-package/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/share/zephyrunittest-package/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/share/zephyr-package/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/share/zephyr-package/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/share/zephyrunittest-package/cmake/ZephyrConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/workdir/zephyr/share/zephyrunittest-package/cmake/zephyr-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/workdir/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake"
+      mode: "config"
+      version: "4.1.99"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/usr/local/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/nanopb/generator-bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/nrfutil/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/arm-zephyr-eabi/bin"
+        - "/opt/ncs/toolchains/f9c66dfcaf/opt/zephyr-sdk/riscv64-zephyr-elf/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+...
