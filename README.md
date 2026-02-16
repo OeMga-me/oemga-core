@@ -1,33 +1,27 @@
-# OEMGA Core
+# OEMGA Core ⚡️
 
-This repository contains the firmware source for the OEMGA project.
-It relies on the nRF Connect SDK (NCS) v3.1.1.
+**OEMGA Core** is the open-source firmware foundation for **OEMGA** — a clean, reproducible, one-command developer experience built on **Nordic nRF Connect SDK (NCS) v3.1.1**.
 
-## Directory Structure
+This repo is designed for **fast onboarding** and **scalable product evolution**:
+- Contributors build against the official upstream Zephyr/NCS board targets.
+- OEMGA hardware differences are applied via **standard overlays + Kconfig**, keeping everything compatible with upstream tooling.
+- A lightweight `oemga` CLI provides a **single entrypoint** for setup + builds (Docker-first).
 
-- `apps/`: Application source code.
-- `west.yml`: Manifest file pinning the SDK version.
-- `oemga`: CLI wrapper for building via Docker.
+---
 
-## Quick Start
+## What you can do here
 
-### 1. Setup
-Initialize the workspace (downloads NCS and dependencies).
-```bash
-./oemga setup
-```
+✅ Initialize a fully pinned NCS workspace  
+✅ Build OEMGA targets with a human-friendly name (e.g. `oemga_alpha`)  
+✅ Produce flashable artifacts with deterministic outputs  
+✅ Keep OEMGA deltas cleanly separated via overlays (no custom board fork required)
 
-### 2. Build
-Build the Alpha firmware (maps to upstream DVK + Overlays).
-```bash
-./oemga build oemga_alpha
-```
+---
 
-The output binaries will be in `build/zephyr/zephyr.hex`.
+## Repository Layout
 
-### 3. Flash
-If you have local tools installed:
-```bash
-west flash
-```
-Or use the nRF Connect Programmer app.
+```text
+oemga-core/
+├─ apps/                # Firmware applications (Zephyr/NCS)
+├─ west.yml             # Workspace manifest (pins NCS + module revisions)
+└─ oemga                # CLI wrapper (setup/build via Docker)
