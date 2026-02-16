@@ -1,13 +1,15 @@
-# OeMga.me : oemga-core
+# OeMga.me
 
 <p align="center">
-<img src="[https://raw.githubusercontent.com/OeMga-me/oemga-core/main/logo.png](https://www.google.com/search?q=https://raw.githubusercontent.com/OeMga-me/oemga-core/main/logo.png)" alt="OeMga.me Logo" width="200">
-</p>
-
-<p align="center">
-<a href="LICENSE"><img src="[https://img.shields.io/badge/License-Apache%202.0-blue.svg](https://img.shields.io/badge/License-Apache%202.0-blue.svg)" alt="License"></a>
-<a href="[https://www.zephyrproject.org/](https://www.zephyrproject.org/)"><img src="[https://img.shields.io/badge/Zephyr-RTOS-black.svg](https://img.shields.io/badge/Zephyr-RTOS-black.svg)" alt="Zephyr RTOS"></a>
-<a href="[https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/)"><img src="[https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg](https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg)" alt="nRF Connect SDK"></a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0">
+  </a>
+  <a href="https://www.zephyrproject.org/">
+    <img src="https://img.shields.io/badge/Zephyr-RTOS-black.svg" alt="Zephyr RTOS">
+  </a>
+  <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/">
+    <img src="https://img.shields.io/badge/Nordic-nRF%20Connect%20SDK-00A9CE.svg" alt="nRF Connect SDK">
+  </a>
 </p>
 
 <p align="center">
