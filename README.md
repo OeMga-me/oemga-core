@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<strong>The open-source, on-device bio-interaction platform.</strong>
+<strong>The open-source, on-device teachable bio-interaction platform.</strong>
 </p>
 
 ## Technical Overview
