@@ -49,11 +49,13 @@ Ensure you have the following installed on your host machine:
 Clone the repository and run the setup script to pull the necessary SDKs and Docker images.
 
 ```bash
+mkdir oemga-workspace && cd oemga-workspace
 git clone https://github.com/OeMga-me/oemga-core.git
 cd oemga-core
 ./oemga setup
-
 ```
+Note: This one-time 20GB setup takes 15–45 minutes, but makes all future builds near-instant.
+
 ## Development Workflow
 
 ### Building Firmware
