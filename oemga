@@ -69,9 +69,28 @@ fi
 
 case $COMMAND in
     setup)
-        echo "⚙️  Initializing West Workspace..."
-        # We ignore errors on west init in case it was already initialized
-        run_in_docker "west init -l . || true && west update && west zephyr-export"
+        echo "⚙️  Step 1: Checking SDK Workspace..."
+        
+        if [ -d ".west" ] || [ -d "../.west" ]; then
+            echo "✅ Workspace already initialized. Skipping 'west init'."
+            run_in_docker "west zephyr-export"
+        else
+            echo "🚀 No workspace found. Initializing (Inside Docker)..."
+            run_in_docker "west init -l . && west update && west zephyr-export"
+        fi
+
+        echo "🐍 Step 2: Creating Virtual Env (Host Side)..."
+        # Using a hidden name to avoid conflict with the script name 'oemga'
+        if [ ! -d ".venv_oemga" ]; then
+            python3 -m venv .venv_oemga || { echo "❌ Failed to create venv. Try 'chmod +w .' first."; exit 1; }
+            
+            echo "📦 Step 3: Installing Flashing Tools..."
+            ./.venv_oemga/bin/pip install west
+        else
+            echo "✅ '.venv_oemga' already exists."
+        fi
+
+        echo "✨ Setup truly complete this time!"
         ;;
 
     build)
@@ -98,50 +117,31 @@ case $COMMAND in
         ;;
     
     flash)
-        # Define the firmware path (adjust 'hello_oemga' if your app name varies)
-        HEX_FILE="build/hello_oemga/zephyr/zephyr.hex"
+        echo "⚡ Searching for compiled firmware..."
+        HEX_FILE=$(find build -name "merged.hex" | head -n 1)
 
-        # Check if the build exists
-        if [ ! -f "$HEX_FILE" ]; then
-            echo "❌ Error: Firmware file not found at $HEX_FILE"
-            echo "   Please run './omega build' first."
+        if [ -z "$HEX_FILE" ]; then
+            echo "❌ Error: Could not find merged.hex."
             exit 1
         fi
 
-        echo "🔍 Looking for flashing method..."
+        echo "✅ Found: $HEX_FILE"
 
-        # --- METHOD 1: Universal Drag-and-Drop (Zero Dependencies) ---
-        # Checks standard mount points for the JLINK drive
-        if [ -d "/Volumes/JLINK" ]; then
-            DRIVE_PATH="/Volumes/JLINK"
-        elif [ -d "/run/media/$USER/JLINK" ]; then
-            DRIVE_PATH="/run/media/$USER/JLINK"
+        # Step 1: Explicitly wipe the nRF54
+        echo "🧹 Erasing Chip..."
+        nrfutil device erase --all
+
+        # Step 2: Program using the simple, stable syntax
+        # We use --options chip_erase_mode=ERASE_NONE because we already erased
+        echo "🚀 Flashing Firmware..."
+        if nrfutil device program --firmware "$HEX_FILE" --options chip_erase_mode=ERASE_NONE; then
+            echo "✨ SUCCESS! Resetting board..."
+            nrfutil device reset --reset-kind=RESET_PIN
+        else
+            echo "❌ ERROR: nrfutil failed."
+            echo "   Try running 'nrfutil device list' to confirm your Mac sees the board."
+            exit 1
         fi
-
-        if [ -n "$DRIVE_PATH" ]; then
-            echo "✅ Found JLINK drive at $DRIVE_PATH"
-            echo "🚀 Copying firmware..."
-            cp "$HEX_FILE" "$DRIVE_PATH/"
-            # Sync ensures the write is flushed before we say success
-            sync
-            echo "✨ Success! Board should be blinking now."
-            exit 0
-        fi
-
-        # --- METHOD 2: nRF Command Line Tools (For Advanced Users) ---
-        if command -v nrfjprog &> /dev/null; then
-            echo "✅ Found 'nrfjprog' tool."
-            echo "⚡ Flashing with verification..."
-            nrfjprog --program "$HEX_FILE" --chiperase --verify --reset
-            exit 0
-        fi
-
-        # --- FAILURE ---
-        echo "❌ Could not flash board automatically."
-        echo "   1. Ensure the board is plugged in."
-        echo "   2. Universal Method: Ensure the device appears as a 'JLINK' USB drive."
-        echo "   3. Advanced Method: Install 'nrfjprog' (nRF Command Line Tools)."
-        exit 1
         ;;
     
     clean)
@@ -151,6 +151,54 @@ case $COMMAND in
 
     shell)
         run_in_docker "/bin/bash"
+        ;;
+
+    create)
+        NEW_APP_NAME=$ARG2
+        NEW_APP_PATH="apps/$NEW_APP_NAME"
+
+        if [ -z "$NEW_APP_NAME" ]; then
+            echo "❌ Error: Please provide a name for the new project."
+            echo "   Usage: ./oemga create my_new_sensor"
+            exit 1
+        fi
+
+        echo "🚀 Creating new project: $NEW_APP_PATH"
+        mkdir -p "$NEW_APP_PATH/src"
+
+        # Create CMakeLists.txt
+        cat <<EOF > "$NEW_APP_PATH/CMakeLists.txt"
+cmake_minimum_required(VERSION 3.20)
+find_package(Zephyr REQUIRED HINTS \$ENV{ZEPHYR_BASE})
+project($NEW_APP_NAME)
+target_sources(app PRIVATE src/main.c)
+EOF
+
+        # Create prj.conf
+        cat <<EOF > "$NEW_APP_PATH/prj.conf"
+CONFIG_GPIO=y
+CONFIG_SERIAL=y
+CONFIG_CONSOLE=y
+CONFIG_UART_CONSOLE=y
+# Potential for nRF54: CONFIG_BT=y (if you need BLE later)
+EOF
+
+        # Create main.c
+        cat <<EOF > "$NEW_APP_PATH/src/main.c"
+#include <zephyr/kernel.h>
+#include <zephyr/sys/printk.h>
+
+int main(void) {
+    printk("OeMga Project '$NEW_APP_NAME' started!\n");
+    while (1) {
+        k_sleep(K_MSEC(2000));
+        printk("Heartbeat from $NEW_APP_NAME\n");
+    }
+    return 0;
+}
+EOF
+        echo "✅ Done! You can now build it with:"
+        echo "   ./oemga build oemga_alpha $NEW_APP_PATH"
         ;;
 
     *)
