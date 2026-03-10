@@ -66,6 +66,23 @@ The build process occurs within a Docker container pinned to the nRF Connect SDK
 ./oemga build oemga_alpha
 
 ```
+### Building Apps and Examples
+
+When switching between different applications or examples, you must clean your build environment to prevent conflicts from previous builds.
+
+From the root directory, run the clean command:
+
+```bash
+./oemga clean
+```
+
+Once the environment is clean, you can build specific applications using the wrapper script from the same path. Specify your target board and the path to the app.
+
+For example, to build the head motion app for the oemga_alpha board, run:
+
+```bash
+./oemga build oemga_alpha apps/oemga_headmotion
+```
 
 ### Flashing Hardware
 
@@ -73,7 +90,6 @@ This command identifies your connected hardware and flashes the compiled `.hex` 
 
 ```bash
 ./oemga flash
-
 ```
 
 The script will attempt to flash using `nrfjprog` first; if unavailable, it will attempt a direct copy to the mounted JLINK USB drive.
